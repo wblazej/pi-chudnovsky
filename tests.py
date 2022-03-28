@@ -3,7 +3,7 @@ from src.time_measurement import TimeMeasurement
 
 previous = None
 
-for i in range(10, 20):
+for i in range(10, 23):
     digits = 2 ** i
 
     tm = TimeMeasurement()

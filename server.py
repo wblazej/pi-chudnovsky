@@ -45,7 +45,7 @@ def get(digits):
         return return_error('Bad request. Max digits is 10^6.', 400)
 
     try:
-        with open('1b.pii', 'r') as f:
+        with open('1b.pi', 'r') as f:
             pi = f.read(2 + digits)
     except FileNotFoundError:
         return return_error('PI file not found.', 500)
