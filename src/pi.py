@@ -1,5 +1,6 @@
 import math
 
+
 class PI:
     digits: int
 
@@ -10,30 +11,30 @@ class PI:
         self.one = 10 ** digits
 
     def calc(self):
-        N = int(self.digits / math.log10(self.c3_over_24 / 6 / 2 / 6) + 1)
-        _, Q, T = self.bs(0, N)
-        sqrtC = self.sqrt(10005 * self.one)
-        return (Q * 426880 * sqrtC) // T
+        n = int(self.digits / math.log10(self.c3_over_24 / 6 / 2 / 6) + 1)
+        _, q, t = self.bs(0, n)
+        sqrt_c = self.sqrt(10005 * self.one)
+        return (q * 426880 * sqrt_c) // t
 
     def bs(self, a, b):
         if b - a == 1:
             if a == 0:
-                Pab = Qab = 1
+                pab = qab = 1
             else:
-                Pab = (6 * a - 5) * (2 * a - 1) * (6 * a - 1)
-                Qab = a ** 3 * self.c3_over_24
-            Tab = Pab * (13591409 + 545140134 * a)
+                pab = (6 * a - 5) * (2 * a - 1) * (6 * a - 1)
+                qab = a ** 3 * self.c3_over_24
+            tab = pab * (13591409 + 545140134 * a)
 
             if a & 1:
-                Tab = -Tab
+                tab = -tab
         else:
             m = (a + b) // 2
-            Pam, Qam, Tam = self.bs(a, m)
-            Pmb, Qmb, Tmb = self.bs(m, b)
-            Pab = Pam * Pmb
-            Qab = Qam * Qmb
-            Tab = Qmb * Tam + Pam * Tmb
-        return Pab, Qab, Tab
+            pam, qam, tam = self.bs(a, m)
+            pmb, qmb, tmb = self.bs(m, b)
+            pab = pam * pmb
+            qab = qam * qmb
+            tab = qmb * tam + pam * tmb
+        return pab, qab, tab
 
     def sqrt(self, n):
         floating_point_precision = 10 ** 16

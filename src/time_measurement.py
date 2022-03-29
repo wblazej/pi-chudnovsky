@@ -13,12 +13,12 @@ class TimeMeasurement:
 
     def get_ms(self, round_to: int = 3):
         x = (self.end - self.start) * 1000
-        if round_to is None:
+        if round_to == -1:
             return x
         return round(x, round_to)
 
     def check_increase(self, other: "TimeMeasurement", round_to: int = 3):
-        x = self.get_ms(round_to=None) / other.get_ms(round_to=None)
+        x = self.get_ms(round_to=-1) / other.get_ms(round_to=-1)
         if round_to is None:
             return x
         return round(x, round_to)

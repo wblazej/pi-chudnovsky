@@ -29,4 +29,3 @@ if __name__ == '__main__':
     parser.add_argument('--dec', help='Test power of 10', action='store_true')
     args = parser.parse_args()
     make_test(args.min, args.max, args.dec)
-

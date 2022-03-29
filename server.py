@@ -3,15 +3,17 @@ from src.read_pi import ReadPI
 
 app = Flask(__name__)
 
+
 def return_error(error_message: str, error_code: int):
     return {
-        'ok': False,
-        'error_code': error_code,
-        'error': error_message
+       'ok': False,
+       'error_code': error_code,
+       'error': error_message
     }, error_code
 
+
 @app.get('/digits/<digits>')
-def digits(digits):
+def get_digits(digits):
     try:
         digits = int(digits)
     except ValueError:
@@ -31,8 +33,9 @@ def digits(digits):
         'pi': pi
     }
 
+
 @app.get('/range/<_from>/<_to>')
-def range(_from, _to):
+def digits_range(_from, _to):
     try:
         _from = int(_from)
         _to = int(_to)
@@ -55,6 +58,7 @@ def range(_from, _to):
         'ok': True,
         'pi': pi
     }
+
 
 if __name__ == "__main__":
     app.debug = True
