@@ -1,5 +1,5 @@
 # pi-chudnovsky
-Python implementation of π digits calculation using [Chudnovsky algorithm](https://en.wikipedia.org/wiki/Chudnovsky_algorithm). This method is one of the most efficient way to calculate π and was used to break π digits calculating world record multiple times.
+Python implementation of π digits calculation using [Chudnovsky algorithm](https://en.wikipedia.org/wiki/Chudnovsky_algorithm). This method is one of the most efficient way to calculate π and was used multiple times in breaking world record of π digits calculating.
 
 ## Performance
 Performance tests showed that the time complexity of the implementation of the algorithm is square. Increase presents how much execution time has raised compared to previous test. The implementation is able to calculate 1 milion digits under 8 minutes.
@@ -13,7 +13,7 @@ python test.py --max 20
 python test.py --dec --min 1 --max 6
 ```
 
-### Apple M1
+### Apple M1 (8 cores)
 Powers of 2
 ```
 digits: 1024    time: 0.523 ms    increase: None
@@ -68,3 +68,6 @@ Response for https://serverless.wblz.xyz/pi/range/5/10:
   pi: "26535"
 }
 ```
+
+## Contribution
+Run the testing commands on your CPU and share your results creating a PR to this readme if the CPU is not present here yet.
