@@ -41,13 +41,13 @@ digits: 1000000 time: 7.6 m       increase: 116.546
 ### ARM-based virtualization
 Powers of 2
 ```
-digits: 1024	  time: 0.688 ms    increase: None
-digits: 2048	  time: 1.685 ms    increase: 2.449
-digits: 4096	  time: 6.751 ms    increase: 4.006
-digits: 8192	  time: 27.759 ms   increase: 4.112
-digits: 16384	  time: 116.173 ms  increase: 4.185
-digits: 32768	  time: 491.369 ms  increase: 4.23
-digits: 65536	  time: 2.076 s     increase: 4.226
+digits: 1024	time: 0.688 ms    increase: None
+digits: 2048	time: 1.685 ms    increase: 2.449
+digits: 4096	time: 6.751 ms    increase: 4.006
+digits: 8192	time: 27.759 ms   increase: 4.112
+digits: 16384	time: 116.173 ms  increase: 4.185
+digits: 32768	time: 491.369 ms  increase: 4.23
+digits: 65536	time: 2.076 s     increase: 4.226
 digits: 131072	time: 8.813 s     increase: 4.245
 digits: 262144	time: 37.879 s    increase: 4.298
 digits: 524288	time: 2.638 m     increase: 4.178
@@ -55,10 +55,10 @@ digits: 1048576	time: 11.16 m     increase: 4.231
 ```
 Powers of 10
 ```
-digits: 10	    time: 0.035 ms    increase: None
-digits: 100	    time: 0.024 ms    increase: 0.689
-digits: 1000	  time: 0.438 ms    increase: 18.02
-digits: 10000	  time: 44.101 ms   increase: 100.638
+digits: 10	time: 0.035 ms    increase: None
+digits: 100	time: 0.024 ms    increase: 0.689
+digits: 1000	time: 0.438 ms    increase: 18.02
+digits: 10000	time: 44.101 ms   increase: 100.638
 digits: 100000	time: 5.126 s     increase: 116.235
 digits: 1000000	time: 10.134 m    increase: 118.621
 ```
