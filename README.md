@@ -63,6 +63,31 @@ digits: 100000	time: 5.126 s     increase: 116.235
 digits: 1000000	time: 10.134 m    increase: 118.621
 ```
 
+### Raspberry Pi 4b
+Powers of 2
+```
+digits: 1024	time: 1.243 ms    increase: None
+digits: 2048	time: 4.173 ms    increase: 3.358
+digits: 4096	time: 15.679 ms   increase: 3.757
+digits: 8192	time: 62.247 ms   increase: 3.97
+digits: 16384	time: 259.258 ms  increase: 4.165
+digits: 32768	time: 1.11 s      increase: 4.28
+digits: 65536	time: 4.641 s     increase: 4.182
+digits: 131072	time: 19.59 s     increase: 4.221
+digits: 262144	time: 1.411 m     increase: 4.322
+digits: 524288	time: 5.868 m     increase: 4.158
+digits: 1048576	time: 24.996 m    increase: 4.26
+```
+Powers of 10
+```
+digits: 10	time: 0.072 ms    increase: None
+digits: 100	time: 0.077 ms    increase: 1.062
+digits: 1000	time: 1.137 ms    increase: 14.765
+digits: 10000	time: 99.194 ms   increase: 87.241
+digits: 100000	time: 11.508 s    increase: 116.015
+digits: 1000000	time: 22.854 m    increase: 119.154
+```
+
 ## API
 Endpoitns that returns digits of π.
 ### Get digits
